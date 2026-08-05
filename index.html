@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brent Gdevs | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Audio File in Root Directory -->
+  <audio id="bgMusic" src="music.mp3" loop preload="auto"></audio>
+
+  <!-- Animated Blue Glow Background Elements -->
+  <div class="bg-animation">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Menu Button Upper Left -->
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle Menu">=</button>
+
+  <!-- Side Navigation Overlay -->
+  <nav class="nav-drawer" id="navDrawer">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#terminal">Terminal</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content Container -->
+  <main>
+    <!-- Intro Section -->
+    <section id="hero" class="hero-section">
+      <div class="avatar-container animate-on-scroll">
+        <!-- Profile Image in Root Directory -->
+        <img src="profile.png" alt="Brent Gdevs Profile" class="profile-img">
+      </div>
+      <h1 class="animate-on-scroll">Hi, I'm <span class="highlight">Brent Gdevs</span></h1>
+      <p class="subtitle animate-on-scroll">16-Year-Old Developer & Tech Creator</p>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="info-section">
+      <h2 class="animate-on-scroll">About Me</h2>
+      <p class="animate-on-scroll bio-text">
+        I'm Brent Gdevs, a 16-year-old developer and coder from Camarines Sur. I specialize in building interactive web experiences, mobile environments, and high-performance software. I love exploring low-level Android operations, custom ROM customization, and creating modern web platforms.
+      </p>
+    </section>
+
+    <!-- Terminal Example Section -->
+    <section id="terminal" class="info-section">
+      <h2 class="animate-on-scroll">Terminal Console</h2>
+      <div class="terminal-box animate-on-scroll">
+        <div class="terminal-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="terminal-title">brent@gdevs:~</span>
+        </div>
+        <div class="terminal-body">
+          <p><span class="prompt">$</span> <span id="typedText"></span><span class="cursor">|</span></p>
+          <div id="terminalOutput" class="terminal-output"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="info-section">
+      <h2 class="animate-on-scroll">What I Do</h2>
+      <div class="cards-grid">
+        <div class="card animate-on-scroll">
+          <h3>Web Coder</h3>
+          <p>Designing modern Web applications, custom user interfaces, glassmorphism designs, and dynamic client-side scripts.</p>
+        </div>
+        <div class="card animate-on-scroll">
+          <h3>Custom ROM</h3>
+          <p>Low-level device partition flashing, GSI installations, Fastboot execution, kernel tweaking, and custom firmware optimization.</p>
+        </div>
+        <div class="card animate-on-scroll">
+          <h3>LF Aklab 😆</h3>
+          <p>Looking for aklab / companions in coding, Android modding, late-night debugging sessions, and chill chats!</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer with Detailed Social Contacts -->
+  <footer id="contact">
+    <h2 class="animate-on-scroll">Get In Touch</h2>
+    
+    <div class="contact-list animate-on-scroll">
+      <!-- Facebook -->
+      <a href="https://facebook.com" target="_blank" class="contact-item">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </div>
+        <div class="contact-details">
+          <span class="platform">Facebook</span>
+          <span class="handle">Gacer Brentt John</span>
+        </div>
+      </a>
+
+      <!-- TikTok -->
+      <a href="https://tiktok.com/@jhoniga2" target="_blank" class="contact-item">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.82.56-1.36 1.52-1.41 2.52-.08 1.02.37 2.08 1.16 2.73.91.77 2.22.95 3.3.52 1.02-.39 1.77-1.33 1.98-2.4.11-.7.07-1.42.07-2.13V.02z"/>
+          </svg>
+        </div>
+        <div class="contact-details">
+          <span class="platform">TikTok</span>
+          <span class="handle">@jhoniga2</span>
+        </div>
+      </a>
+
+      <!-- Telegram -->
+      <a href="https://t.me/brext_25" target="_blank" class="contact-item">
+        <div class="icon-wrapper">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12s5.37 12 12 12 12-5.37 12-12S18.63 0 12 0zm5.56 8.16l-2.02 9.51c-.15.68-.55.84-1.12.52l-3.1-2.29-1.5 1.44c-.16.16-.3.3-.61.3l.22-3.14 5.72-5.17c.25-.22-.05-.34-.38-.12l-7.07 4.45-3.04-.95c-.66-.21-.67-.66.14-.98l11.89-4.58c.55-.2 1.03.13.87.81z"/>
+          </svg>
+        </div>
+        <div class="contact-details">
+          <span class="platform">Telegram</span>
+          <span class="handle">@brext_25</span>
+        </div>
+      </a>
+    </div>
+
+    <p class="copyright">&copy; 2026 Brent Gdevs. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
